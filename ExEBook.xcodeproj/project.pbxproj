@@ -13,6 +13,8 @@
 		63D19C50269E71F4006561BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D19C4E269E71F4006561BE /* Main.storyboard */; };
 		63D19C52269E71F6006561BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D19C51269E71F6006561BE /* Assets.xcassets */; };
 		63D19C55269E71F6006561BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D19C53269E71F6006561BE /* LaunchScreen.storyboard */; };
+		63D19C5D269EC5BA006561BE /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63D19C5C269EC5BA006561BE /* crayon_1-1.ttf */; };
+		63D19C5F269ED7E9006561BE /* setofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63D19C5E269ED7E9006561BE /* setofont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		63D19C51269E71F6006561BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D19C54269E71F6006561BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D19C56269E71F6006561BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D19C5C269EC5BA006561BE /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
+		63D19C5E269ED7E9006561BE /* setofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = setofont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		63D19C47269E71F4006561BE /* ExEBook */ = {
 			isa = PBXGroup;
 			children = (
+				63D19C5C269EC5BA006561BE /* crayon_1-1.ttf */,
+				63D19C5E269ED7E9006561BE /* setofont.ttf */,
 				63D19C48269E71F4006561BE /* AppDelegate.swift */,
 				63D19C4A269E71F4006561BE /* SceneDelegate.swift */,
 				63D19C4C269E71F4006561BE /* ViewController.swift */,
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D19C5D269EC5BA006561BE /* crayon_1-1.ttf in Resources */,
+				63D19C5F269ED7E9006561BE /* setofont.ttf in Resources */,
 				63D19C55269E71F6006561BE /* LaunchScreen.storyboard in Resources */,
 				63D19C52269E71F6006561BE /* Assets.xcassets in Resources */,
 				63D19C50269E71F4006561BE /* Main.storyboard in Resources */,
@@ -292,6 +300,9 @@
 				DEVELOPMENT_TEAM = PMNP7A2UL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExEBook/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = ExEBook;
+				INFOPLIST_KEY_CFBundleName = ExEBook;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +331,9 @@
 				DEVELOPMENT_TEAM = PMNP7A2UL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExEBook/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = ExEBook;
+				INFOPLIST_KEY_CFBundleName = ExEBook;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
