@@ -17,36 +17,351 @@
         </array>
     </customFonts>
     <scenes>
-        <!--魔法鑰匙-->
+        <!--Table View Controller-->
         <scene sceneID="iSm-pz-dDZ">
             <objects>
                 <tableViewController id="uxn-sb-Kxs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KMf-od-2nN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KMf-od-2nN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DeV-lV-KHH">
-                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DeV-lV-KHH" id="Czc-LP-diz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="ao5-Ox-jrn">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="372"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jnu-mB-DNN">
+                                    <rect key="frame" x="18" y="0.0" width="378" height="185"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageReference key="image" image="keylist"/>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-aN-QNQ">
+                                    <rect key="frame" x="18" y="193" width="378" height="179"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <string key="text">原著作者一起出現了十八把鑰匙，但在美劇《致命鑰匙》目前只出現了十二把，並且有三把是劇中原創的鑰匙。其實把從《致命鑰匙》第一季的結局來看 ，這部劇是有第二季規劃的，所以肯定不可能第一季把所有的鑰匙都展示出來，下面給大家介紹一下在《致命鑰匙》第一季中出現過的鑰匙。</string>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="92l-7a-jey">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="DeV-lV-KHH" userLabel="k1">
+                                        <rect key="frame" x="0.0" y="422" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DeV-lV-KHH" id="Czc-LP-diz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-9j-uhb">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k1"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="移動鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-yo-xhL">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xfy-e4-gaZ" kind="show" id="eJh-0h-krZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="g5y-ai-ofv" userLabel="k2">
+                                        <rect key="frame" x="0.0" y="515" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g5y-ai-ofv" id="Pcp-6s-jGZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtI-Lz-DfQ">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k2"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="鏡子鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMp-Qs-fic">
+                                                    <rect key="frame" x="197" y="26" width="160" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="A8P-Mv-ZS4" kind="show" id="hwx-fA-oPr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="pQD-ss-A8A" userLabel="k3">
+                                        <rect key="frame" x="0.0" y="608" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQD-ss-A8A" id="Vo7-g7-5s7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0T6-K6-Z5e">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k3"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="火柴鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-wZ-1c2">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ete-fh-1tc" kind="show" id="FNc-dK-nCT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Kcg-rA-mvT" userLabel="k4">
+                                        <rect key="frame" x="0.0" y="701" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kcg-rA-mvT" id="QAb-tc-BJz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcj-pi-5qN">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k4"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="腦內鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-Vq-IMZ" userLabel="腦內鑰匙">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Frq-cu-a5f" kind="show" id="sTe-fe-Wz7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="t9L-qU-AU3" userLabel="k5">
+                                        <rect key="frame" x="0.0" y="794" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t9L-qU-AU3" id="F2o-94-nqN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9p-en-k4d">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="鬼魂鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xy-27-MrZ">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Qxb-ic-Zuh" kind="show" id="hkO-Kd-C6R"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="XVt-1m-sIa" userLabel="k6">
+                                        <rect key="frame" x="0.0" y="887" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XVt-1m-sIa" id="M1O-0s-jrm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-g1-aij">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k6"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="音樂盒鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55k-7D-Pae">
+                                                    <rect key="frame" x="197" y="8" width="209" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="UyS-H4-Sfc" kind="show" id="fdY-GF-pNb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Ksg-ND-7pR" userLabel="k7">
+                                        <rect key="frame" x="0.0" y="980" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ksg-ND-7pR" id="433-bN-rXB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-Ou-Qmj">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k7"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="植物鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-ju-PTg">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="uc4-2r-jFR" kind="show" id="A0V-LZ-Yvy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="W18-dQ-gQ5" userLabel="k8">
+                                        <rect key="frame" x="0.0" y="1073" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W18-dQ-gQ5" id="rXM-p9-zd7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGq-q2-lQe">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k8"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身分鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-r1-kWJ">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="16I-zk-GI2" kind="show" id="SYy-Jj-fXa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="Hgb-VH-XSL" userLabel="k9">
+                                        <rect key="frame" x="0.0" y="1166" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hgb-VH-XSL" id="2C9-Fg-hKz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73Z-Ab-0XK">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k9"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="修復鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfy-8I-IBI">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Z6k-QC-kH8" kind="show" id="gnl-44-stl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="QGg-K9-80v" userLabel="k10">
+                                        <rect key="frame" x="0.0" y="1259" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QGg-K9-80v" id="9No-xM-4pb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45r-Wn-7cy">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k10"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回音鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-Wi-Bvk">
+                                                    <rect key="frame" x="197" y="11" width="168" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="evF-2Q-2zd" kind="show" id="Jz5-kP-llI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="bNj-Ex-lTz" userLabel="k11">
+                                        <rect key="frame" x="0.0" y="1352" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bNj-Ex-lTz" id="qWJ-8q-NI1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WtI-kb-VxJ">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k11"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暗影之冠鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-n5-y5x">
+                                                    <rect key="frame" x="197" y="11" width="201" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="33"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="w1g-9U-53W" kind="show" id="aUE-zU-BQ1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="0aC-NV-MTo" userLabel="k12">
+                                        <rect key="frame" x="0.0" y="1445" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0aC-NV-MTo" id="EFw-lc-0fr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-8z-hYi">
+                                                    <rect key="frame" x="10" y="0.0" width="179" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="k12"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="奧米伽鑰匙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca3-L7-x8V">
+                                                    <rect key="frame" x="197" y="11" width="209" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="y52-An-WuB" kind="show" id="wpA-gq-9fa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="uxn-sb-Kxs" id="5Jq-a3-rTp"/>
                             <outlet property="delegate" destination="uxn-sb-Kxs" id="aew-LB-guZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="魔法鑰匙" id="4yK-Tg-BwC">
-                        <imageReference key="image" image="key.fill" catalog="system"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="2Tr-Qg-HQc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keY-Wc-O4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="-961"/>
+            <point key="canvasLocation" x="2240.5797101449275" y="-961.60714285714278"/>
         </scene>
         <!--本劇介紹-->
         <scene sceneID="lXx-3P-0ii">
@@ -448,7 +763,7 @@
                     <connections>
                         <segue destination="70J-fk-qmg" kind="relationship" relationship="viewControllers" id="Wfs-2l-i7V"/>
                         <segue destination="Sgz-Hc-r7Q" kind="relationship" relationship="viewControllers" id="XoX-E6-VmU"/>
-                        <segue destination="uxn-sb-Kxs" kind="relationship" relationship="viewControllers" id="juW-h5-2MC"/>
+                        <segue destination="FNt-w5-4X4" kind="relationship" relationship="viewControllers" id="juW-h5-2MC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuM-Xw-4qu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -755,10 +1070,461 @@
             </objects>
             <point key="canvasLocation" x="10320" y="-283"/>
         </scene>
+        <!--魔法鑰匙-->
+        <scene sceneID="1bN-fx-oZB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FNt-w5-4X4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="魔法鑰匙" id="4yK-Tg-BwC">
+                        <imageReference key="image" image="key.fill" catalog="system"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vam-ZN-KKb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uxn-sb-Kxs" kind="relationship" relationship="rootViewController" id="5oa-m7-14R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDw-Kp-kfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330.4347826086957" y="-961.60714285714278"/>
+        </scene>
+        <!--移動鑰匙-->
+        <scene sceneID="Tz3-w5-3Mh">
+            <objects>
+                <viewController id="xfy-e4-gaZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ghz-Qh-zWh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-qD-kyk">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key1"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-Uq-raX">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">洛克家最小的兒子博迪率先在鑰匙屋中找到的第一把魔法鑰匙就是「移動鑰匙」。他在井中聽到道奇所言，開始在屋中尋寶，沒多久後發現姐姐金希平日戴的手環有蹊蹺，於是將它拆解得到這把鑰匙。
+ 
+天真無邪的博迪馬上試驗這把鑰匙的功能，向衣櫥喊著帶我去冰淇淋店，沒想到一打開門後，居然讓他實現了願望。這把鑰匙實際上可以帶著人們到世界各地，簡單來說就是任意門的概念。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WU7-gF-CvE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="移動鑰匙" id="Mqo-x9-EhD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0Z-Dg-j8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3074" y="-962"/>
+        </scene>
+        <!--鏡子鑰匙-->
+        <scene sceneID="F7a-2e-GE9">
+            <objects>
+                <viewController id="A8P-Mv-ZS4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Jj-N9-0lh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5W-2k-i4z">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key2"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E1d-aB-r1u">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">首集中，洛克長子和媽媽差點因為「鏡子鑰匙」喪命，原因在於這把鑰匙在鏡中反映出通往自我的地獄，一但進入就很難出來。所幸在洛克家孩子的同心協力下，泰勒綁著繩子進入到鏡中世界，找到媽媽後及時被金希和博迪拉出。
+ 
+這把鑰匙透過鏡子開啟，主要讓使用者通往一個宛如平行宇宙的世界。人們被無數面鏡子的反射所吸引後，將會陷入其中很難逃脫，是個完美的監獄。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WXZ-fC-PTI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="鏡子鑰匙" id="zzw-BF-62o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeZ-qo-HrT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3922" y="-962"/>
+        </scene>
+        <!--火柴鑰匙-->
+        <scene sceneID="mvq-2n-hv7">
+            <objects>
+                <viewController id="ete-fh-1tc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQC-JI-WEd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Gp-RI-pFQ">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key3"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="這把鑰匙在開場時曾一度出現，鑰匙守護者馬克聽聞噩耗後，將鑰匙插入胸口導致自己爆炸，連帶燒毀了住家。後來，道奇將這把鑰匙給了山姆，讓他運用燃燒的功能來越獄。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tlv-at-bWv">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iTy-yy-pcK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="火柴鑰匙" id="LG0-n9-QPv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ca0-hp-2kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4671" y="-962"/>
+        </scene>
+        <!--腦內鑰匙-->
+        <scene sceneID="Kqw-Gq-X7A">
+            <objects>
+                <viewController id="Frq-cu-a5f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFy-Xd-hVg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppt-mX-PeR">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key4"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-VY-Bog">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">「腦內鑰匙」一度被金希稱作「大腦鑰匙」，但博迪語氣堅決地為它正名。這把鑰匙的使用方法是插入後頸，之後身體會保持不動僵硬狀態，另一個自己便會跑出，可以進入到此人的大腦之中。
+ 
+這把鑰匙在劇中相當關鍵，它解開了洛克家孩子心中的結，當然，也是惡魔道奇一直想拿到手的一把。因為道奇必須使用這把鑰匙的功能來得知「奧米伽鑰匙」的所在。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5e8-Yv-WGU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="腦內鑰匙" id="4tI-LC-6Sg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zJ-eD-TaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5396" y="-962"/>
+        </scene>
+        <!--鬼魂鑰匙-->
+        <scene sceneID="9HT-lR-aPH">
+            <objects>
+                <viewController id="Qxb-ic-Zuh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2KK-Il-tJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOr-2H-jC9">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key5"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tt2-Hk-bg8">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">使用這把穿過特定的門之後，身體會如同死去一般倒下，而靈魂會出竅。博迪使用這把鑰匙後，開心地在城鎮上飛來飛去，更在墓園中遇見了他的祖先們。
+ 
+不過它的功能不僅於讓使用者自由自在地飛翔，還能做到窺探的功能。但得小心的是，若是在無人得知你正使用鑰匙的狀態下，你的身體就會被誤以為死亡，一旦肉身被搬離，靈魂自然回不去。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xDz-hB-r91"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="鬼魂鑰匙" id="lOD-5V-0qG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAG-rP-clg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6083" y="-962"/>
+        </scene>
+        <!--音樂盒鑰匙-->
+        <scene sceneID="r6U-q8-ERx">
+            <objects>
+                <viewController id="UyS-H4-Sfc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvI-ke-eoi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QnW-YC-QNu">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key6"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sIY-ru-poO">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">在音樂盒內被發現的這把看來沒什麼特別之處，直到金希無意尖叫泰勒閉嘴後，強大的力量才被發現。
+ 
+這把的功能是可以命令他人行事，如金希叫泰勒閉嘴，對方就真的被封住嘴巴不得說話。又如金希想報復校園風雲人物伊登，利用鑰匙的功能發布指令，讓伊登在大眾面前出糗。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eZa-02-sLS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="音樂盒鑰匙" id="w6f-0k-wkf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIW-xO-Aj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6758" y="-962"/>
+        </scene>
+        <!--植物鑰匙-->
+        <scene sceneID="eXZ-Dd-k1I">
+            <objects>
+                <viewController id="uc4-2r-jFR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prb-vL-ZFP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AH1-HC-Ofr">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key7"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-Ow-bjf">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">外表看來像花朵的鑰匙必須插入樹木中的孔才能啟動功能。而它最主要的目的就是保管記憶，將記憶鎖在玻璃罐中，埋藏在田地之下。
+ 
+金希和泰勒因使用這把鑰匙理解了「身分鑰匙」的功能，更發現當年父親與朋友間的爭執經過。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nfh-q9-xcv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="植物鑰匙" id="vD7-4k-rJl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pb2-bB-nBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7451" y="-962"/>
+        </scene>
+        <!--身分鑰匙-->
+        <scene sceneID="8pC-QP-awc">
+            <objects>
+                <viewController id="16I-zk-GI2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gY7-q5-a57">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hji-Ge-NMS">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key8"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jMu-Tr-EnR">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">從「植物鑰匙」啟用功能看到的回憶中，「身分鑰匙」是一把可以改變人類外貌的鑰匙。用法是插入喉嚨的位置，一轉之後，想改變成的外型就會出現。
+ 
+更厲害的是，不僅能讓自己變成另一個樣貌，也可以把同樣的功能用在別人身上。首季結尾中，惡魔道奇用了鑰匙功能讓艾莉變成自己的模樣，導致泰勒一行人誤認艾莉為惡魔，將她丟回洞穴的黑門之中。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cgo-VL-FmR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="身分鑰匙" id="aRt-7S-Hfc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alt-oN-FF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8151" y="-962"/>
+        </scene>
+        <!--修復鑰匙-->
+        <scene sceneID="DMp-6g-WcR">
+            <objects>
+                <viewController id="Z6k-QC-kH8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x8E-mq-WKW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-G2-URf">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key9"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XVj-ib-fPM">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">博迪拿到這把鑰匙後，插入屋內的一個木櫃卻發現沒有什麼功用，但事實上，它是一個可以修復東西的神奇鑰匙。
+ 
+妮娜曾將撕破的書本放入櫃子中，但她不知道關鍵在於鑰匙，還在櫃子前亂舞一番，似乎下咒語一樣，打開後發現損毀的書竟恢復原狀。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qdy-hq-032"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="修復鑰匙" id="D14-FO-EZq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kc-Bf-niV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8854" y="-962"/>
+        </scene>
+        <!--回音鑰匙-->
+        <scene sceneID="VnZ-TI-TJe">
+            <objects>
+                <viewController id="evF-2Q-2zd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jBE-eq-M5p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGN-bR-4lY">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key10"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H1V-aC-LzV">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">艾莉說出當年洛克家父親發生的事情後，透露自己保管的鑰匙就是這一把「回音鑰匙」。雖然當年大家都發誓不得再使用這些魔法，但因戀人去世的傷痛，讓她忍不住走到井中使用這把鑰匙。
+ 
+這把鑰匙只能用在井屋之中，可以召喚已逝之人的靈魂，而對方從井中的回應就像迴聲一樣傳遞給生者。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ml1-wG-Y1B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="回音鑰匙" id="4v4-jY-vPe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sff-sK-Wkr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9554" y="-962"/>
+        </scene>
+        <!--暗影之冠鑰匙-->
+        <scene sceneID="WVJ-ro-nz5">
+            <objects>
+                <viewController id="w1g-9U-53W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4RF-qi-OyR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-7W-AZ0">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key11"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I9y-D3-WVU">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">擁有「暗影之冠鑰匙」的人可以控制如鬼魂一般的暗影怪物，但觸發的必要條件是使用者必須戴上王冠。
+ 
+劇中最後是由道奇搶奪到這把鑰匙並戴上王冠，她率領眾多暗影來到鑰匙屋，想奪取最重要的「奧米伽鑰匙」。雖然結果不如她所想，但邪惡計畫還是算成功了一半，起碼有個同類也來到了這個世界。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cwM-gq-fND"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="暗影之冠鑰匙" id="Hkb-Qu-16L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOS-MJ-Ev0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10319" y="-962"/>
+        </scene>
+        <!--奧米伽鑰匙-->
+        <scene sceneID="8P2-Qr-nsv">
+            <objects>
+                <viewController id="y52-An-WuB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DEO-Zn-QJg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-fe-rKP">
+                                <rect key="frame" x="20" y="88" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="key12"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f8u-Wq-C4j">
+                                <rect key="frame" x="20" y="366" width="374" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">「奧米伽鑰匙」的功能雖然不如其它把討人喜愛，但要說它是終極鑰匙一點也不為過。它是洛克家祖先第一把打造出的鑰匙，不料，這把鑰匙竟能打開黑門，讓惡魔來到人類的世界。
+ 
+雖然洛克家孩子在首季結尾拿到了這把極為重要的鑰匙，但打了黑門後卻意外又讓另一個惡魔進來，讓他們的未來充滿未知危險。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9z0-KL-gEC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="奧米伽鑰匙" id="sXE-Qc-n8v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8S1-d6-4TR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11030" y="-962"/>
+        </scene>
     </scenes>
     <resources>
         <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="k1" width="544" height="204"/>
+        <image name="k10" width="366" height="152"/>
+        <image name="k11" width="514" height="190"/>
+        <image name="k12" width="482" height="192"/>
+        <image name="k2" width="460" height="206"/>
+        <image name="k3" width="614" height="188"/>
+        <image name="k4" width="446" height="202"/>
+        <image name="k5" width="464" height="192"/>
+        <image name="k6" width="570" height="204"/>
+        <image name="k7" width="434" height="194"/>
+        <image name="k8" width="458" height="204"/>
+        <image name="k9" width="498" height="198"/>
         <image name="key.fill" catalog="system" width="83" height="128"/>
+        <image name="key1" width="700" height="390"/>
+        <image name="key10" width="700" height="393"/>
+        <image name="key11" width="700" height="390"/>
+        <image name="key12" width="700" height="390"/>
+        <image name="key2" width="700" height="390"/>
+        <image name="key3" width="700" height="387"/>
+        <image name="key4" width="700" height="387"/>
+        <image name="key5" width="700" height="386"/>
+        <image name="key6" width="700" height="389"/>
+        <image name="key7" width="700" height="387"/>
+        <image name="key8" width="700" height="392"/>
+        <image name="key9" width="700" height="390"/>
+        <image name="keylist" width="600" height="337"/>
         <image name="no1" width="1080" height="540"/>
         <image name="no10" width="1080" height="607"/>
         <image name="no2" width="1080" height="607"/>
