@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Table View Controller-->
+        <!--魔法鑰匙-->
         <scene sceneID="iSm-pz-dDZ">
             <objects>
                 <tableViewController id="uxn-sb-Kxs" sceneMemberID="viewController">
@@ -370,11 +370,11 @@
                             <outlet property="delegate" destination="uxn-sb-Kxs" id="aew-LB-guZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="2Tr-Qg-HQc"/>
+                    <navigationItem key="navigationItem" title="魔法鑰匙" id="2Tr-Qg-HQc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keY-Wc-O4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139" y="-962"/>
+            <point key="canvasLocation" x="2197" y="-963"/>
         </scene>
         <!--本劇介紹-->
         <scene sceneID="lXx-3P-0ii">
@@ -414,8 +414,8 @@
                                 <rect key="frame" x="20" y="549" width="384" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">史蒂芬金（Stephen King）之子喬希爾（Joe Hill）與Gabriel Rodríguez 共同創作IDW 恐怖驚悚漫畫《Locke &amp; Key》於2008 年出版，劇情描述Locke 家的三位兄弟姐妹在父親遭到殘忍殺害後，三名子女搬進新英格蘭的老家大宅，並得到一把能賦予他們神奇力量的魔法鑰匙。
-故事描述三兄弟姐妹的父親被謀殺後，孩子們與母親搬到馬薩諸塞州的祖屋裡，孩子們很快發現祖屋裡的神奇魔法鑰匙給了他們無法想像的特殊能力，但他們不知道一個狡猾的惡魔對此也虎視眈眈，為了得到它們，他將不惜一切代價奪得這串神奇鑰匙。</mutableString>
+                                <string key="text">史蒂芬金（Stephen King）之子喬希爾（Joe Hill）與Gabriel Rodríguez 共同創作IDW 恐怖驚悚漫畫《Locke &amp; Key》於2008 年出版，劇情描述Locke 家的三位兄弟姐妹在父親遭到殘忍殺害後，三名子女搬進新英格蘭的老家大宅，並得到一把能賦予他們神奇力量的魔法鑰匙。
+故事描述三兄弟姐妹的父親被謀殺後，孩子們與母親搬到馬薩諸塞州的祖屋裡，孩子們很快發現祖屋裡的神奇魔法鑰匙給了他們無法想像的特殊能力，但他們不知道一個狡猾的惡魔對此也虎視眈眈，為了得到它們，他將不惜一切代價奪得這串神奇鑰匙。</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="SetoFont" family="SetoFont" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -975,7 +975,7 @@ Darby Stanchfield</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iz8-oG-9kE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3071.0144927536235" y="426.89732142857139"/>
+            <point key="canvasLocation" x="2245" y="427"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="806-Ag-5fy">
@@ -1017,7 +1017,7 @@ Darby Stanchfield</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXx-c7-7sp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333.3333333333335" y="-262.5"/>
+            <point key="canvasLocation" x="519" y="-263"/>
         </scene>
         <!--補誘者/守護者-->
         <scene sceneID="on6-f1-MAD">
@@ -1843,7 +1843,7 @@ Darby Stanchfield</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgC-ID-tL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242.0289855072465" y="487.5"/>
+            <point key="canvasLocation" x="1330" y="488"/>
         </scene>
         <!--角色人物介紹-->
         <scene sceneID="ZGk-bU-Bct">
@@ -1864,7 +1864,7 @@ Darby Stanchfield</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DrJ-Mq-g3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="488"/>
+            <point key="canvasLocation" x="519" y="488"/>
         </scene>
     </scenes>
     <resources>
